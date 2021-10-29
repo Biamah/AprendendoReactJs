@@ -1,0 +1,9 @@
+.lista-notas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 30px
+}
+
+.lista-notas li {
+  list-style: none;
+}

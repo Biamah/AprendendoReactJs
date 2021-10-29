@@ -1,0 +1,7 @@
+.app {
+  display: flex;
+}
+
+.app main {
+  flex-grow: 3;
+}

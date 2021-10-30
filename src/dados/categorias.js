@@ -1,8 +1,5 @@
-import React, { Component } from 'react'
-
-export default class Categorias extends Component {
+export default class Categorias {
   constructor(){
-    super();
     this.categorias = [];
     this._inscritos = [];
   }
@@ -16,15 +13,15 @@ export default class Categorias extends Component {
   }
 
   adicionarCategoria(novaCategoria){
-    console.log(this.categorias);
     this.categorias.push(novaCategoria);
+    this.notificar()
   }
 
-  render() {
-    return (
-      <div>
+  // render() {
+  //   return (
+  //     <div>
         
-      </div>
-    )
-  }
+  //     </div>
+  //   )
+  // }
 }

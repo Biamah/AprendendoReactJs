@@ -1,8 +1,7 @@
-import React, { Component } from 'react'
 
-export default class ArrayNotas extends Component {
+
+export default class ArrayNotas {
   constructor(){
-    super();
     this.notas = [];
   }
 

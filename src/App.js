@@ -23,8 +23,8 @@ class App extends Component {
         />
         <main>
           <ListaCategorias
-            categorias={this.categorias.categorias}
-            adicionarCategoria={this.categorias.adicionarCategoria}
+            categorias={this.categorias}
+            adicionarCategoria={this.categorias.adicionarCategoria.bind(this.categorias)}
           />
           <ListaDeNotas
             eraseNote={this.notas.apagarNotas}

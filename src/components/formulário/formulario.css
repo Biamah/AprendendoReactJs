@@ -8,6 +8,14 @@
   margin-bottom: 15px;
 }
 
+.formulario select {
+  margin-bottom: 15px;
+  background-color: lightgray;
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+}
+
 .formulario input {
   margin-bottom: 15px;
   background-color: lightgray;

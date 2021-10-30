@@ -14,6 +14,7 @@ export default class ListaDeNotas extends Component {
                 eraseNote={this.props.eraseNote}
                 title={note.title}
                 text={note.text}
+                categoria={note.categoria}
               />
             </li>
           );

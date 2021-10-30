@@ -6,6 +6,7 @@ export default class FormularioCadastro extends Component {
     super(props);
     this.title = "";
     this.text = "";
+    this.categoria = "Sem categoria";
   }
 
   _handleTitle(event) {
@@ -19,13 +20,19 @@ export default class FormularioCadastro extends Component {
   _createNote(event) {
     event.preventDefault();
     event.stopPropagation();
-    this.props.createNote(this.title, this.text);
+    this.props.createNote(this.title, this.text, this.categoria);
+  }
+
+  _handleCategoria(event) {
+    event.stopPropagation();
+    this.categoria = event.target.value;
   }
 
   render() {
     return (
       <form className="formulario" onSubmit={this._createNote.bind(this)}>
-        <select>
+        <select onChange={this._handleCategoria.bind(this)}>
+          <option>Sem categoria</option>
           {this.props.categorias.map((categoria) => {
             return <option>{categoria}</option>;
           })}

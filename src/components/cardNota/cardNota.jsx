@@ -14,6 +14,7 @@ export default class CardNota extends Component {
         <div className="cabecalho">
           <h3 className="title-card">{this.props.title}</h3>
           <DeleteSVG onClick={this.delete.bind(this)} />
+          <h4>{this.props.categoria}</h4>
         </div>
         <p className="text-card">{this.props.text}</p>
       </section>
